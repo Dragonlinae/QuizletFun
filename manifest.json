@@ -3,7 +3,7 @@
     "name": "Quizlet Answers",
 	"description": "Show Quizlet Textbook Answers (at least Part 1)",
     "short_name": "QnA",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "content_scripts": [
         {
             "matches": [
