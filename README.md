@@ -1,1 +1,1 @@
-This is your Chrome extension which replaces a word or phrase with a different word or phrase. 
+Just a dragon snooping around Quizlet, don't mind this at all.
