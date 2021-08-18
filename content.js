@@ -48,9 +48,6 @@ class QuizletFun{
 
 })();
 
-const injectedCode = `
-Quizlet.pickColorTheme("night")
-`
 var script = document.createElement("script");
-script.textContent = injectedCode;
-(document.head).appendChild(script);
+script.setAttribute('src', 'chrome-extension://' + chrome.runtime.id + '/runAtStart.js');
+document.documentElement.appendChild(script);
