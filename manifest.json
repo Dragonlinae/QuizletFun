@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Quizlet Answers",
+	"description": "Show Quizlet Textbook Answers (at least Part 1)",
+    "short_name": "QnA",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://quizlet.com/*"
+            ],
+            "js": ["/content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "256": "/img/icon-256.png"
+    }
+}
