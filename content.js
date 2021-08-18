@@ -37,3 +37,10 @@ class QuizletFun{
     new QuizletFun().initialize();
 
 })();
+
+const injectedCode = `
+Quizlet.pickColorTheme("night")
+`
+var script = document.createElement("script");
+script.textContent = injectedCode;
+(document.head).appendChild(script);
