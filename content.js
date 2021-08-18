@@ -15,6 +15,7 @@ class QuizletFun{
 
         this.lastScrollPos = currScrollPos;
         this.checkForQuizletPopup();
+	this.showFlashcards();
     }
 
     checkForQuizletPopup() {
@@ -29,6 +30,15 @@ class QuizletFun{
 
 	if(showthis.length>0){
 		showthis[0].className=""
+	}
+    }
+
+    showFlashcards() {
+	var MagicCards = document.getElementsByClassName("SetPageTerm has-definitionText"); 
+	for (var i = 0; i < MagicCards.length; i++) {
+	    MagicCards[i].className = "SetPageTerm has-definitionText is-showing";
+	    var AntireadMagicCards = MagicCards[i].cloneNode(true);
+	    MagicCards[i].parentNode.replaceChild(AntireadMagicCards, MagicCards[i]);
 	}
     }
 }
