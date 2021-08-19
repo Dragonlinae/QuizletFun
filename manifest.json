@@ -25,5 +25,11 @@
     ],
     "icons": {
         "256": "/img/icon-256.png"
-    }
+    },
+    "permissions": [
+        "cookies"
+    ],
+    "host_permissions": [
+        "https://quizlet.com/*"
+    ]
 }
